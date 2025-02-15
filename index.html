@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SKF App Store</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="nav-content">
+			<div class="logo">
+				<h1>SKF App Store</h1>
+			</div>
+			<div class="nav-links">
+				<a href="index.html" class="active">Home</a>
+				<a href="apps.html">Apps</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="admin.html">Admin</a>
+			</div>
+			<div class="search-bar">
+				<input type="text" placeholder="Search apps..." id="searchInput">
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section class="hero">
+			<h2>Welcome to SKF App Store</h2>
+			<p>Discover amazing apps for your needs</p>
+		</section>
+
+		<section class="featured-apps">
+			<h3>Featured Apps</h3>
+			<div class="app-grid" id="appGrid">
+				<!-- Apps will be dynamically loaded here -->
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2024 SKF App Store. All rights reserved.</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	<script src="js/config.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

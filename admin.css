@@ -1,0 +1,80 @@
+.admin-container {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 2rem;
+}
+
+.admin-container h2 {
+	color: var(--primary-color);
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.admin-form {
+	background: white;
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 
+		8px 8px 16px var(--shadow-color),
+		-8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: var(--text-color);
+	font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 0.8rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: var(--primary-color);
+}
+
+.submit-btn {
+	background: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	cursor: pointer;
+	width: 100%;
+	transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+	background: var(--secondary-color);
+}
+
+.upload-status {
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.upload-status.success {
+	background: #4fd1c5;
+	color: white;
+}
+
+.upload-status.error {
+	background: #fc8181;
+	color: white;
+}
